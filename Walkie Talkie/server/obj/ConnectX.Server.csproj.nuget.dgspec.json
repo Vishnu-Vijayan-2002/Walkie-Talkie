@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\test\\wocky_tocky\\server\\ConnectX.Server.csproj": {}
+    "D:\\test\\Walkie Talkie\\server\\ConnectX.Server.csproj": {}
   },
   "projects": {
-    "D:\\test\\wocky_tocky\\server\\ConnectX.Server.csproj": {
+    "D:\\test\\Walkie Talkie\\server\\ConnectX.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\wocky_tocky\\server\\ConnectX.Server.csproj",
+        "projectUniqueName": "D:\\test\\Walkie Talkie\\server\\ConnectX.Server.csproj",
         "projectName": "ConnectX.Server",
-        "projectPath": "D:\\test\\wocky_tocky\\server\\ConnectX.Server.csproj",
+        "projectPath": "D:\\test\\Walkie Talkie\\server\\ConnectX.Server.csproj",
         "packagesPath": "C:\\Users\\vishn\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\wocky_tocky\\server\\obj\\",
+        "outputPath": "D:\\test\\Walkie Talkie\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

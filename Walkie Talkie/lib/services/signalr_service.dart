@@ -35,7 +35,7 @@ typedef JoinDeclinedCallback = void Function(String roomId, String reason);
 ///   - Relay WebRTC SDP Offers, Answers, and ICE candidates.
 ///   - Expose a [statusStream] for connection health monitoring.
 class ConnectXSignalRService extends ChangeNotifier {
-  static const String _defaultHubUrl = 'http://10.116.46.91:5211/hubs/ptt'; // Real device → PC on LAN
+  static const String _defaultHubUrl = 'http://10.120.69.98:5211/hubs/ptt'; // Real device → PC on LAN
 
   HubConnection? _connection;
   HubConnectionStatus _status = HubConnectionStatus.disconnected;

@@ -5,7 +5,7 @@ import '../models/device_identity.dart';
 
 /// REST access for durable room data. SignalR is used only for live events.
 class RoomApiService {
-  static const _baseUrl = 'http://10.116.46.91:5211/api/v1';
+  static const _baseUrl = 'http://10.120.69.98:5211/api/v1';
 
   Future<void> provisionDevice(DeviceIdentity identity) async {
     await _request('POST', '/devices/provision', {

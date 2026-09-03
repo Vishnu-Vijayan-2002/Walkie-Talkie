@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c6u4KvA0+sI=",
+  "dgSpecHash": "uvPqZaehgBk=",
   "success": true,
-  "projectFilePath": "D:\\test\\wocky_tocky\\server\\ConnectX.Server.csproj",
+  "projectFilePath": "D:\\test\\Walkie Talkie\\server\\ConnectX.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vishn\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\vishn\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
