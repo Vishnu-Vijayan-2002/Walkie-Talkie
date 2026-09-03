@@ -71,8 +71,14 @@ class PttController extends ChangeNotifier {
     // Initialize WebRTC microphone input
     await _voiceService.initializeAudio(localDeviceId: _deviceId!);
 
-    // Start the SignalR connection (non-blocking; retries automatically)
-    unawaited(_hub.connect());
+    // Wait for the initial connection attempt (bounded) so callers like
+    // AppState can safely joinRoom()/register immediately after this returns.
+    // withAutomaticReconnect still handles drops after this point.
+    try {
+      await _hub.connect().timeout(const Duration(seconds: 5));
+    } catch (e) {
+      debugPrint('[PttController] Initial SignalR connect did not complete in time: $e');
+    }
   }
 
   Future<void> joinRoom(String roomId) async {
@@ -92,6 +98,11 @@ class PttController extends ChangeNotifier {
   Future<void> leaveRoom() async {
     if (_activeRoomId == null || _deviceId == null) return;
     await _hub.leaveRoom(_activeRoomId!, _deviceId!);
+    // Tear down peer connections and stop transmitting immediately, rather
+    // than waiting for the next joinRoom()'s setCurrentRoom() to clean up.
+    // Without this, a leave/rejoin cycle can leave stale WebRTC connections
+    // around that silently kill audio on the next join.
+    _voiceService.leaveCurrentRoom();
     _activeRoomId = null;
     _currentFloorToken = null;
     _transmissionTimer?.cancel();

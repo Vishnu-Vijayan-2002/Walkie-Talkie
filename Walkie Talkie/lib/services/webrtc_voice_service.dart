@@ -80,6 +80,18 @@ class WebRtcVoiceService extends ChangeNotifier {
     _cleanupPeerConnections();
   }
 
+  /// Called when leaving a room — immediately tears down peer connections and
+  /// stops transmitting, rather than waiting for the next setCurrentRoom()
+  /// call. Closes the window where a leave/rejoin cycle (or a leave signal
+  /// that failed to reach the server) could leave stale peer connections
+  /// around, silently killing audio on the next join even though SignalR
+  /// state and the PTT UI look completely normal.
+  void leaveCurrentRoom() {
+    stopTransmitting();
+    _cleanupPeerConnections();
+    _currentRoomId = null;
+  }
+
   // ─────────────────────────────────────────────────────────────────
   // Floor Control Integration (Unmute / Mute Mic Track)
   // ─────────────────────────────────────────────────────────────────
@@ -109,8 +121,15 @@ class WebRtcVoiceService extends ChangeNotifier {
   // ─────────────────────────────────────────────────────────────────
 
   Future<RTCPeerConnection> _getOrCreatePeerConnection(String remoteDeviceId) async {
-    if (_peerConnections.containsKey(remoteDeviceId)) {
-      return _peerConnections[remoteDeviceId]!;
+    // Always discard any previous connection for this peer before building a
+    // new one. Reusing an RTCPeerConnection left over from a prior join
+    // (e.g. after a leave/rejoin cycle) can be in a broken or half-torn-down
+    // state — SDP renegotiation on top of it fails silently, producing no
+    // audio in either direction with no visible error.
+    final stale = _peerConnections.remove(remoteDeviceId);
+    if (stale != null) {
+      await stale.close();
+      _remoteStreams.remove(remoteDeviceId);
     }
 
     final pc = await createPeerConnection(_iceServers);
@@ -232,6 +251,8 @@ class WebRtcVoiceService extends ChangeNotifier {
     _signalR.onMemberJoined = (roomId, deviceId, data) {
       if (roomId == _currentRoomId && deviceId != _localDeviceId) {
         // As a host/existing member, establish WebRTC link with the newcomer
+        // (or re-establish it, if this is a rejoin — _getOrCreatePeerConnection
+        // always tears down any stale connection first).
         connectToPeer(deviceId);
       }
     };

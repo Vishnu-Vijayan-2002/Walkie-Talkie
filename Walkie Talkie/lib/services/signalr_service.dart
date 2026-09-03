@@ -208,7 +208,22 @@ class ConnectXSignalRService extends ChangeNotifier {
     await _invoke('SendIceCandidate', [roomId, senderDeviceId, targetDeviceId, candidate, sdpMid, sdpMLineIndex]);
   }
 
+  /// Invokes a hub method, waiting briefly for the connection to settle if
+  /// it's currently mid-handshake (connecting/reconnecting) instead of
+  /// silently dropping the call. Closes the startup race where JoinRoom /
+  /// RegisterRoomCreator fire before the hub reports "connected".
   Future<void> _invoke(String method, List<Object> args) async {
+    if (_status == HubConnectionStatus.connecting || _status == HubConnectionStatus.reconnecting) {
+      try {
+        await statusStream
+            .firstWhere((s) => s == HubConnectionStatus.connected)
+            .timeout(const Duration(seconds: 5));
+      } catch (_) {
+        debugPrint('[SignalR] $method — gave up waiting for connection');
+        return;
+      }
+    }
+
     if (_connection == null || _status != HubConnectionStatus.connected) {
       debugPrint('[SignalR] Cannot invoke $method — not connected (status: $_status)');
       return;

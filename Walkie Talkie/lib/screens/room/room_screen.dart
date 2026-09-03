@@ -269,44 +269,47 @@ class _RoomScreenState extends State<RoomScreen> {
               ],
 
               // Main Communication Console Body
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Current Speaker Section
-                      SpeakerDisplay(
-                        speakerName: state.currentSpeakerName,
-                        isSpeaking: isSomeoneSpeaking || isUserTransmitting,
-                        isCurrentUser: isUserTransmitting,
-                      ),
+Expanded(
+  child: SingleChildScrollView(
+    padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        // Current Speaker Section
+        SpeakerDisplay(
+          speakerName: state.currentSpeakerName,
+          isSpeaking: isSomeoneSpeaking || isUserTransmitting,
+          isCurrentUser: isUserTransmitting,
+        ),
+        const SizedBox(height: 20),
 
-                      // Real-time Audio Waveform Visualizer
-                      WaveformVisualizer(
-                        amplitudes: state.waveAmplitudes,
-                        isActive: isUserTransmitting || isSomeoneSpeaking,
-                        activeColor: isUserTransmitting
-                            ? AppColors.liveGreen
-                            : (isOfflineMesh ? AppColors.meshAmber : AppColors.emergencyRed),
-                      ),
+        // Real-time Audio Waveform Visualizer
+        WaveformVisualizer(
+          amplitudes: state.waveAmplitudes,
+          isActive: isUserTransmitting || isSomeoneSpeaking,
+          activeColor: isUserTransmitting
+              ? AppColors.liveGreen
+              : (isOfflineMesh ? AppColors.meshAmber : AppColors.emergencyRed),
+        ),
+        const SizedBox(height: 20),
 
-                      // Massive PTT Centerpiece Button
-                      PttButton(
-                        state: state,
-                        onPressed: state.pressPtt,
-                        onReleased: state.releasePtt,
-                      ),
+        // Massive PTT Centerpiece Button
+        PttButton(
+          state: state,
+          onPressed: state.pressPtt,
+          onReleased: state.releasePtt,
+        ),
+        const SizedBox(height: 20),
 
-                      // Raise Hand Button (One-tap floor request)
-                      RaiseHandButton(
-                        isHandRaised: state.isHandRaised,
-                        onTap: state.toggleRaiseHand,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+        // Raise Hand Button (One-tap floor request)
+        RaiseHandButton(
+          isHandRaised: state.isHandRaised,
+          onTap: state.toggleRaiseHand,
+        ),
+      ],
+    ),
+  ),
+),
 
               // Bottom Console Navigation Bar: Members & Raised Hands Quick Glance
               Container(
