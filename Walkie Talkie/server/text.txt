@@ -1,0 +1,248 @@
+Running Gradle task 'assembleDebug'...                             70.7s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...           6.8s
+D/FlutterJNI( 6615): Beginning load of flutter...
+D/FlutterJNI( 6615): flutter (null) was loaded normally!
+I/flutter ( 6615): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/Choreographer( 6615): Skipped 242 frames!  The application may be doing too much work on its main thread.
+W/libc    ( 6615): Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+I/AdrenoGLES-0( 6615): QUALCOMM build                   : 954c274f64, I3b030ac11d
+I/AdrenoGLES-0( 6615): Build Date                       : 11/15/21
+I/AdrenoGLES-0( 6615): OpenGL ES Shader Compiler Version: EV031.32.02.06
+I/AdrenoGLES-0( 6615): Local Branch                     : 
+I/AdrenoGLES-0( 6615): Remote Branch                    : 
+I/AdrenoGLES-0( 6615): Remote Branch                    : 
+I/AdrenoGLES-0( 6615): Reconstruct Branch               : 
+I/AdrenoGLES-0( 6615): Build Config                     : S P 10.0.7 AArch64
+I/AdrenoGLES-0( 6615): Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0( 6615): PFP: 0x016dd091, ME: 0x00000000
+I/xample.connectx( 6615): Compiler allocated 6420KB to compile void android.view.ViewRootImpl.performTraversals()
+E/xample.connectx( 6615): Cannot find perfservice
+W/libc    ( 6615): Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+E/qdgralloc( 6615): GetGpuPixelFormat: No map for format: 0x38
+E/AdrenoUtils( 6615): <validate_memory_layout_input_parmas:1962>: Unknown Format 0
+E/AdrenoUtils( 6615): <adreno_init_memory_layout:4689>: Memory Layout input parameter validation failed!
+E/qdgralloc( 6615): GetGpuResourceSizeAndDimensions Graphics metadata init failed
+E/Gralloc4( 6615): isSupported(1, 1, 56, 1, ...) failed with 1
+E/OpenGLRenderer( 6615): Unable to match the desired swap behavior.
+E/GraphicBufferAllocator( 6615): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 1
+E/AHardwareBuffer( 6615): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -1), handle=0x0
+E/qdgralloc( 6615): GetGpuPixelFormat: No map for format: 0x3b
+E/AdrenoUtils( 6615): <validate_memory_layout_input_parmas:1962>: Unknown Format 0
+E/AdrenoUtils( 6615): <adreno_init_memory_layout:4689>: Memory Layout input parameter validation failed!
+E/qdgralloc( 6615): GetGpuResourceSizeAndDimensions Graphics metadata init failed
+E/Gralloc4( 6615): isSupported(1, 1, 59, 1, ...) failed with 1
+E/GraphicBufferAllocator( 6615): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 1
+E/AHardwareBuffer( 6615): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -1), handle=0x0
+E/qdgralloc( 6615): GetGpuPixelFormat: No map for format: 0x38
+E/AdrenoUtils( 6615): <validate_memory_layout_input_parmas:1962>: Unknown Format 0
+E/AdrenoUtils( 6615): <adreno_init_memory_layout:4689>: Memory Layout input parameter validation failed!
+E/qdgralloc( 6615): GetGpuResourceSizeAndDimensions Graphics metadata init failed
+E/Gralloc4( 6615): isSupported(1, 1, 56, 1, ...) failed with 1
+E/GraphicBufferAllocator( 6615): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 1
+E/AHardwareBuffer( 6615): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -1), handle=0x0
+E/qdgralloc( 6615): GetGpuPixelFormat: No map for format: 0x3b
+E/AdrenoUtils( 6615): <validate_memory_layout_input_parmas:1962>: Unknown Format 0
+E/AdrenoUtils( 6615): <adreno_init_memory_layout:4689>: Memory Layout input parameter validation failed!
+E/qdgralloc( 6615): GetGpuResourceSizeAndDimensions Graphics metadata init failed
+E/Gralloc4( 6615): isSupported(1, 1, 59, 1, ...) failed with 1
+E/GraphicBufferAllocator( 6615): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 1
+E/AHardwareBuffer( 6615): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -1), handle=0x0
+I/ImeTracker( 6615): com.example.connectx:9ad271ac: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:9ad271ac: onFailed at PHASE_CLIENT_VIEW_SERVED
+W/InputMethodManager( 6615): Ignoring showSoftInput() as view=io.flutter.embedding.android.FlutterView{9a5b7d2 VFE...... .F....ID 0,0-1080,2334 #1} is not served.
+I/ImeTracker( 6615): com.example.connectx:4c31cd62: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:4c31cd62: onFailed at PHASE_CLIENT_VIEW_SERVED
+W/InputMethodManager( 6615): Ignoring showSoftInput() as view=io.flutter.embedding.android.FlutterView{9a5b7d2 VFE...... .F....ID 0,0-1080,2334 #1} is not served.
+I/org.webrtc.Logging( 6615): NativeLibrary: Loading native library: jingle_peerconnection_so
+I/org.webrtc.Logging( 6615): NativeLibrary: Loading library: jingle_peerconnection_so
+D/nativeloader( 6615): Load /data/app/~~qPQiLufd7BViJReYudApRg==/com.example.connectx--j5LDTGmoVLL5zKKnRMw_g==/base.apk!/lib/arm64-v8a/libjingle_peerconnection_so.so using class loader ns clns-4 (caller=/data/app/~~qPQiLufd7BViJReYudApRg==/com.example.connectx--j5LDTGmoVLL5zKKnRMw_g==/base.apk!classes16.dex): ok
+D/CompatibilityChangeReporter( 6615): Compat change id reported: 263076149; UID 10307; state: ENABLED
+W/input_volume_stats_reporter.cc( 6615): (line 95): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+W/input_volume_stats_reporter.cc( 6615): (line 95): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+I/audio_processing_impl.cc( 6615): (line 484): Injected APM submodules:
+I/audio_processing_impl.cc( 6615): Echo control factory: 0
+I/audio_processing_impl.cc( 6615): Echo detector: 0
+I/audio_processing_impl.cc( 6615): Capture analyzer: 0
+I/audio_processing_impl.cc( 6615): Capture post processor: 1
+I/audio_processing_impl.cc( 6615): Render pre processor: 1
+I/audio_processing_impl.cc( 6615): Neural residual echo estimator 0
+I/audio_processing_impl.cc( 6615): [1/2] (line 499): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 32000, multi_channel_render: 1, multi_channel_capture: 1 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_d
+I/audio_processing_impl.cc( 6615): [2/2] elay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 5, max_gain_db: 50, initial_gain_db: 15, max_gain_change_db_per_second: 6, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+I/audio_processing_impl.cc( 6615): [1/2] (line 685): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 32000, multi_channel_render: 1, multi_channel_capture: 1 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, refer
+I/audio_processing_impl.cc( 6615): [2/2] ence_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 5, max_gain_db: 50, initial_gain_db: 15, max_gain_change_db_per_second: 6, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+I/audio_record_jni.cc( 6615): (line 83): ctor
+I/audio_track_jni.cc( 6615): (line 57): ctor
+W/VideoCapabilities( 6615): Unsupported mime image/vnd.android.heic
+W/VideoCapabilities( 6615): Unrecognized profile/level 0/3 for video/mpeg2
+W/VideoCapabilities( 6615): Unrecognized profile/level 0/3 for video/mpeg2
+W/AudioCapabilities( 6615): Unsupported mime audio/x-ms-wma
+W/AudioCapabilities( 6615): Unsupported mime audio/x-ms-wma
+W/AudioCapabilities( 6615): Unsupported mime audio/mpeg-L1
+W/AudioCapabilities( 6615): Unsupported mime audio/mpeg-L2
+W/AudioCapabilities( 6615): Unsupported mime audio/mpeg-L1
+W/AudioCapabilities( 6615): Unsupported mime audio/mpeg-L2
+W/AudioCapabilities( 6615): Unsupported mime audio/ra
+W/AudioCapabilities( 6615): Unsupported mime audio/ra
+W/AudioCapabilities( 6615): Unsupported mime audio/alac
+W/AudioCapabilities( 6615): Unsupported mime audio/alac
+W/AudioCapabilities( 6615): Unsupported mime audio/ape
+W/AudioCapabilities( 6615): Unsupported mime audio/x-ape
+W/AudioCapabilities( 6615): Unsupported mime audio/ape
+W/AudioCapabilities( 6615): Unsupported mime audio/x-ape
+W/AudioCapabilities( 6615): Unsupported mime audio/adpcm
+W/AudioCapabilities( 6615): Unsupported mime audio/x-ms-adpcm
+W/AudioCapabilities( 6615): Unsupported mime audio/pcm
+W/AudioCapabilities( 6615): Unsupported mime audio/pcm
+W/AudioCapabilities( 6615): Unsupported mime audio/dsd
+W/AudioCapabilities( 6615): Unsupported mime audio/dsd
+W/VideoCapabilities( 6615): Unsupported mime video/rv
+W/VideoCapabilities( 6615): Unsupported mime video/rv
+W/VideoCapabilities( 6615): Unsupported mime video/x-ms-wmv
+W/VideoCapabilities( 6615): Unsupported mime video/x-ms-wmv2
+W/VideoCapabilities( 6615): Unsupported mime video/x-ms-wmv
+W/VideoCapabilities( 6615): Unsupported mime video/x-ms-wmv2
+W/VideoCapabilities( 6615): Unsupported mime video/divx3
+W/VideoCapabilities( 6615): Unsupported mime video/divx3
+W/VideoCapabilities( 6615): Unsupported mime video/flv1
+W/VideoCapabilities( 6615): Unsupported mime video/x-flv
+W/VideoCapabilities( 6615): Unsupported mime video/flv1
+W/VideoCapabilities( 6615): Unsupported mime video/x-flv
+W/VideoCapabilities( 6615): Unsupported mime video/mjpeg
+W/VideoCapabilities( 6615): Unsupported mime video/x-motion-jpeg
+W/VideoCapabilities( 6615): Unsupported mime video/mjpeg
+W/VideoCapabilities( 6615): Unsupported mime video/x-motion-jpeg
+I/webrtc_voice_engine.cc( 6615): (line 490): WebRtcVoiceEngine::WebRtcVoiceEngine
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [96:video/VP8/90000/0] produced from Codec name: VP8, parameters: { }, scalability_modes: [L1T1, L1T2, L1T3]
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [96:video/VP8/90000/0] produced from Codec name: VP8, parameters: { }
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [98:video/H264/90000/0;level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f] produced from Codec name: H264, parameters: { level-asymmetry-allowed=1 packetization-mode=1 profile-level-id=42e01f }
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [35:video/H265/90000/0] produced from Codec name: H265, parameters: { }
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [98:video/VP9/90000/0] produced from Codec name: VP9, parameters: { }
+W/webrtc_video_engine.cc( 6615): (line 226): Factory produced duplicate codecs, ignoring [39:video/AV1/90000/0] produced from Codec name: AV1, parameters: { }
+I/AssistStructure( 6615): Flattened final assist data: 512 bytes, containing 1 windows, 3 views
+V/ImeFocusController( 6615): onWindowFocus: io.flutter.embedding.android.FlutterView{9a5b7d2 VFE...... .F...... 0,0-1080,2334 #1 aid=1073741824} softInputMode=STATE_UNSPECIFIED|ADJUST_RESIZE|IS_FORWARD_NAVIGATION
+D/MediaConstraintsUtils( 6615): mandatory constraints are not a map
+D/MediaConstraintsUtils( 6615): optional constraints are not an array
+I/FlutterWebRTCPlugin( 6615): getUserMedia(audio): mandatory: [], optional: []
+D/FlutterWebRTCPlugin( 6615): MediaStream id: 52768d42-187c-4090-ba6b-4e8f584b8e83
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+I/AudioManager( 6615): In isSpeakerphoneOn(), calling application: com.example.connectx
+D/AudioManager( 6615): setMicrophoneMute(false)
+I/AudioManager( 6615): In setSpeakerphoneOn(), on: false, calling application: com.example.connectx
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+I/AudioManager( 6615): In stopBluetoothSco(), calling application: com.example.connectx
+W/FlutterWebRTCPlugin( 6615): audioFocusChangeListener [Earpiece(name=Earpiece)] Earpiece(name=Earpiece)
+I/AudioManager( 6615): In stopBluetoothSco(), calling application: com.example.connectx
+I/AudioManager( 6615): In setSpeakerphoneOn(), on: true, calling application: com.example.connectx
+Syncing files to device I2202...                                   473ms
+
+Flutter run key commands.
+r Hot reload. 
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on I2202 is available at: http://127.0.0.1:62026/BwlG4oGVizY=/
+The Flutter DevTools debugger and profiler on I2202 is available at:
+http://127.0.0.1:62026/BwlG4oGVizY=/devtools/?uri=ws://127.0.0.1:62026/BwlG4oGVizY=/ws
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+W/FlutterWebRTCPlugin( 6615): audioFocusChangeListener [Speakerphone(name=Speakerphone), Earpiece(name=Earpiece)] Speakerphone(name=Speakerphone)
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+I/ImeTracker( 6615): com.example.connectx:bb158318: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:bb158318: onShown
+I/flutter ( 6615): [SignalR] Connection failed: TimeoutException after 0:00:02.000000: Future not completed
+D/ProfileInstaller( 6615): Installing profile for com.example.connectx
+W/AidlConversionCppNdk( 6615): aidl2legacy_AudioChannelLayout_audio_channel_mask_t: no legacy output audio_channel_mask_t found for AudioChannelLayout{layoutMask: 16}
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Sr0WsgH8CrLQu0Vdfh6-aA==/com.google.android.googlequicksearchbox-2t_Zt7CJ-BT_LVXebwxBww==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Sr0WsgH8CrLQu0Vdfh6-aA==/com.google.android.googlequicksearchbox-2t_Zt7CJ-BT_LVXebwxBww==/split_config.xxhdpi.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Sr0WsgH8CrLQu0Vdfh6-aA==/com.google.android.googlequicksearchbox-2t_Zt7CJ-BT_LVXebwxBww==/split_lens_ondevice_engine_feature_module.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Sr0WsgH8CrLQu0Vdfh6-aA==/com.google.android.googlequicksearchbox-2t_Zt7CJ-BT_LVXebwxBww==/split_lens_ondevice_engine_play_ml_module.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~R5koCvZLnaZO9zfYCDXDoQ==/com.google.android.marvin.talkback-P9aJdxDoV3dVm9qtPMJXgg==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~R5koCvZLnaZO9zfYCDXDoQ==/com.google.android.marvin.talkback-P9aJdxDoV3dVm9qtPMJXgg==/split_config.arm64_v8a.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~3f8W2xMeTHug9Ss4P7FTDg==/com.vivo.browser-jaP5s-tOm73N4TEMv-klYA==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~U2Me-oHgh52bbSxW57VZ8A==/ai.perplexity.app.android-Hi05_BA_xf6sEFWM_AaMDg==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~U2Me-oHgh52bbSxW57VZ8A==/ai.perplexity.app.android-Hi05_BA_xf6sEFWM_AaMDg==/split_config.arm64_v8a.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~U2Me-oHgh52bbSxW57VZ8A==/ai.perplexity.app.android-Hi05_BA_xf6sEFWM_AaMDg==/split_config.xxhdpi.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OWf9fu1Eyf0B4mGreNKiZw==/com.anthropic.claude-WRqZf5pEbV1C8UotbivHHg==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OWf9fu1Eyf0B4mGreNKiZw==/com.anthropic.claude-WRqZf5pEbV1C8UotbivHHg==/split_config.arm64_v8a.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OWf9fu1Eyf0B4mGreNKiZw==/com.anthropic.claude-WRqZf5pEbV1C8UotbivHHg==/split_config.en.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~OWf9fu1Eyf0B4mGreNKiZw==/com.anthropic.claude-WRqZf5pEbV1C8UotbivHHg==/split_config.xxhdpi.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w0WwSaFJ-ouVCa8eL0yvXw==/com.openai.chatgpt-23Ilu5ARVFnrdrJ_2mXQHw==/base.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w0WwSaFJ-ouVCa8eL0yvXw==/com.openai.chatgpt-23Ilu5ARVFnrdrJ_2mXQHw==/split_config.arm64_v8a.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w0WwSaFJ-ouVCa8eL0yvXw==/com.openai.chatgpt-23Ilu5ARVFnrdrJ_2mXQHw==/split_config.en.apk' with 1 weak references
+W/xample.connectx( 6615): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w0WwSaFJ-ouVCa8eL0yvXw==/com.openai.chatgpt-23Ilu5ARVFnrdrJ_2mXQHw==/split_config.xxhdpi.apk' with 1 weak references
+I/ImeTracker( 6615): com.example.connectx:ff3343e3: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+W/WindowOnBackDispatcher( 6615): sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@140608640 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@6ff96eb
+I/ImeTracker( 6615): com.example.connectx:c15df04d: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6615): com.example.connectx:ff3343e3: onHidden
+W/WindowOnBackDispatcher( 6615): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 6615): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/ImeTracker( 6615): com.example.connectx:45e2345b: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/AssistStructure( 6615): Flattened final assist data: 448 bytes, containing 1 windows, 3 views
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:45e2345b: onShown
+I/flutter ( 6615): Unable to load rooms from server: SocketException: Connection timed out (OS Error: Connection timed out, errno = 110), address = 10.116.46.91, port = 40060
+I/flutter ( 6615): [SignalR] Connection failed: TimeoutException after 0:00:02.000000: Future not completed
+I/flutter ( 6615): [SignalR] Cannot invoke SearchRoom — not connected (status: HubConnectionStatus.error)
+I/ImeTracker( 6615): com.example.connectx:a0b1556d: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+W/WindowOnBackDispatcher( 6615): sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@140608640 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@983c2bc
+I/ImeTracker( 6615): com.example.connectx:5419c619: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6615): com.example.connectx:a0b1556d: onHidden
+W/WindowOnBackDispatcher( 6615): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 6615): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter ( 6615): [AppState] createRoom API call failed (TimeoutException after 0:00:03.000000: Future not completed), generating room locally
+I/flutter ( 6615): [SignalR] Cannot invoke JoinRoom — not connected (status: HubConnectionStatus.error)
+I/flutter ( 6615): [SignalR] Cannot invoke RegisterRoomCreator — not connected (status: HubConnectionStatus.error)
+I/flutter ( 6615): [SignalR] Cannot invoke RequestFloor — not connected (status: HubConnectionStatus.error)
+I/ImeTracker( 6615): com.example.connectx:835c3656: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/AssistStructure( 6615): Flattened final assist data: 508 bytes, containing 1 windows, 3 views
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:835c3656: onShown
+I/ImeTracker( 6615): com.example.connectx:3d018716: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+W/WindowOnBackDispatcher( 6615): sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@140608640 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@8ee66b5
+I/ImeTracker( 6615): com.example.connectx:22adcc57: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6615): com.example.connectx:3d018716: onHidden
+I/ImeTracker( 6615): com.example.connectx:521565b5: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:521565b5: onShown
+I/ImeTracker( 6615): com.example.connectx:7573e769: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:4af798e8: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:7573e769: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:4af798e8: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker( 6615): com.example.connectx:1daaced6: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:41ada8d0: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:1daaced6: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:41ada8d0: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker( 6615): com.example.connectx:6f5641b3: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+W/WindowOnBackDispatcher( 6615): sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@140608640 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@ac65b4
+I/ImeTracker( 6615): com.example.connectx:6790cd13: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6615): com.example.connectx:6f5641b3: onHidden
+I/ImeTracker( 6615): com.example.connectx:750027fc: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:750027fc: onShown
+I/ImeTracker( 6615): com.example.connectx:71c5fe7c: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:6764e745: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:71c5fe7c: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:6764e745: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker( 6615): com.example.connectx:bdd65b1e: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/ImeTracker( 6615): com.example.connectx:41e96341: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:bdd65b1e: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/InsetsController( 6615): show(ime(), fromIme=true)
+I/ImeTracker( 6615): com.example.connectx:41e96341: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/ImeTracker( 6615): com.example.connectx:b46744ee: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+W/WindowOnBackDispatcher( 6615): sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@140608640 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@e0ea3e4
+I/ImeTracker( 6615): com.example.connectx:16a96ee0: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6615): com.example.connectx:b46744ee: onHidden

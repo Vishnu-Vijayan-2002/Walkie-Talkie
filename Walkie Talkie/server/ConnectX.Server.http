@@ -1,0 +1,14 @@
+@ConnectX.Server_HostAddress = http://10.116.46.91:5211
+
+### 1. Health / Root Check
+GET {{ConnectX.Server_HostAddress}}/
+Accept: application/json
+
+### 2. Get Rooms
+GET {{ConnectX.Server_HostAddress}}/api/v1/rooms
+Accept: application/json
+
+### 3. Search Room by ID (e.g. CX-18628)
+GET {{ConnectX.Server_HostAddress}}/api/v1/rooms/CX-18628
+Accept: application/json
+
