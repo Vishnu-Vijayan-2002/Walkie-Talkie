@@ -290,8 +290,9 @@ class _RoomSettingsScreenState extends State<RoomSettingsScreen> {
 
               ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.of(context).pop();
-                  Navigator.of(context).pop();
+                  final nav = Navigator.of(context);
+                  if (nav.canPop()) nav.pop();
+                  if (nav.canPop()) nav.pop();
                 },
                 icon: const Icon(Icons.exit_to_app_rounded),
                 label: const Text('EXIT CHANNEL'),

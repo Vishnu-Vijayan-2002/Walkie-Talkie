@@ -34,10 +34,18 @@ class _RoomScreenState extends State<RoomScreen> {
       return Scaffold(
         appBar: AppBar(
           title: const Text('NO ACTIVE ROOM'),
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_rounded),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
+        leading: IconButton(
+  icon: const Icon(Icons.arrow_back_rounded),
+  onPressed: () async {
+    if (!mounted) return;
+
+    final navigator = Navigator.of(context);
+
+    if (navigator.canPop()) {
+      navigator.pop();
+    }
+  },
+),
         ),
         body: Center(
           child: Padding(
