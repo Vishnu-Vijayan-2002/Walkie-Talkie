@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectX.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+999f4c37e2980004655f61730e4e17f8c93c9c4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27c9522365a12a03dbdf91a550635d403feabee3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectX.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectX.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
